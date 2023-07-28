@@ -1,0 +1,205 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+i{
+    pointer-events: none;
+}
+
+body{
+    background-color: black;
+}
+
+h2{
+    color: #fffefe;
+  font-size: 2rem;
+}
+
+
+.container{
+ margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   min-height: 100%;
+   width: 100%;
+}
+
+.pad{
+    width: 5rem;
+    height: 5rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease ;
+}
+.kickpad{
+    border: 2px solid white;
+    box-shadow: 0 0 0.4rem #fff,
+     0 0 0.5rem #bc13fe,
+      0 0 3rem #bc13fe,
+       inset 0 0 3.3rem #b517f4;
+}
+
+.snarepad{
+    border: 2px solid white;
+    box-shadow: 0 0 0.4rem #fff,
+     0 0 0.5rem #fe1361,
+      0 0 3rem #fe1361,
+       inset 0 0 3.3rem #fe1361;
+}
+.hihatpad{
+    border: 2px solid white;
+    box-shadow: 0 0 0.4rem #fff,
+     0 0 0.5rem #13fea4,
+      0 0 3rem #13fea4,
+       inset 0 0 3.3rem #13fea4;}
+.tompad{
+    border: 2px solid white;
+    box-shadow: 0 0 0.4rem #fff,
+     0 0 0.5rem #ff9933,
+      0 0 3rem #ff9933,
+       inset 0 0 3.3rem #ff9933;}
+
+.kickpad.active{
+    background-color: rgb(106, 17, 223);
+  
+}
+.snarepad.active{
+    background-color: rgb(238, 12, 54);
+}
+.hihatpad.active{
+    background-color: rgb(4, 175, 35);
+}
+.tompad.active{
+    background-color: #7f4307;
+}
+
+.kick-pad , .snare-pad, .hihat-pad, .tom-pad{
+    display: flex;
+    
+}
+
+.kick-track , .snare-track, .hihat-track, .tom-track{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    width: 80%;
+
+}
+
+
+.controls{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem 2rem  ;
+}
+
+.mute-button{
+    border: none;
+    background-color: rgb(24, 149, 20);
+    box-shadow: 0px 0px 40px rgb(233, 162, 162), 0px 0px 50px rgb(236, 233, 233) ;
+    padding: 0.5rem;
+    color: rgba(249, 249, 249, 0.987);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease ;
+}
+
+.mute-button.active{
+    background-color: rgb(234, 13, 13);
+  box-shadow:none;
+ 
+}
+
+select{
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(79, 245, 234);
+    border: 2px solid rgb(253, 255, 255);
+    
+}
+
+.play-button{
+    font-size: 1.5rem;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 3px;
+    color: #111;
+     background: #e4ff14;
+     box-shadow: 0 0 50px #b8ff14;
+     text-shadow: 2px 2px 10px white;
+    cursor: pointer;
+    width: 10%;
+    margin: 2.5rem;
+}
+
+.play-button.active{
+    color: #111;
+    background: #39ff14;
+    box-shadow: 0 0 50px #39ff14;
+}
+
+.more-audio{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.4rem;
+    border: 2px solid whitw;
+    color: #111;
+     background: #e3e9b0;
+     box-shadow: 0 0 50px #b8ff14;
+     text-shadow: 2px 2px 10px white;
+    cursor: pointer;
+    width: 5%;
+    margin-right: 1rem;
+    align-self: end;
+}
+.more-audio.active{
+    background: #14ffd8;
+    box-shadow: 0 0 50px rgb(44, 104, 217);
+}
+
+.tempo{
+    width: 30vw;
+ margin-right: 0.5rem;
+    align-self: end;
+}
+
+#tempo-slider{
+ -webkit-appearance: none;
+ background-color: hsl(22, 33%, 95%);
+box-shadow: 2px 2px 50px red, 0px 0px 80px blue, 0px 0px 40px rgb(38, 255, 0),0px 0px 40px rgb(38, 255, 0);
+ width: 100%;
+ padding:  0.3rem ;
+ border-radius: 0.5rem;
+    cursor: pointer;
+   
+}
+
+.tempo p {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    text-align: center;
+    color: #efecec;
+}
+ 
+.music-gif{
+   
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes playTrack {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+  
