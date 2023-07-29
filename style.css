@@ -313,5 +313,29 @@ box-shadow: 2px 2px 50px red, 0px 0px 80px blue, 0px 0px 40px rgb(38, 255, 0),0p
 .kick-track , .snare-track, .hihat-track, .tom-track{
     width: 95%;
 }
+.kickpad{
+    box-shadow: 0 0 0.4rem #fff,
+     0 0 0.5rem #bc13fe,
+      0 0 3rem #bc13fe,
+       inset 0 0 3.3rem #dbadeb;
+}
+.snarepad{
+    box-shadow: 0 0 0.4rem #fff,
+     0 0 0.5rem #fe1361,
+      0 0 3rem #fe1361,
+       inset 0 0 3.3rem #eb86a8;
+}
+.hihatpad{
+    
+    box-shadow: 0 0 0.4rem #fff,
+     0 0 0.5rem #13fea4,
+      0 0 3rem #13fea4,
+       inset 0 0 3.3rem #98f2d0;}
+.tompad{
+   
+    box-shadow: 0 0 0.4rem #fff,
+     0 0 0.5rem #ff9933,
+      0 0 3rem #ff9933,
+       inset 0 0 3.3rem #e5b585;}
 }
 
