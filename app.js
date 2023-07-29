@@ -219,3 +219,7 @@ drumKit.tempoSlider.addEventListener("change", e => {
 drumKit.moreButton.addEventListener("click", () => {
     drumKit.moreLess();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+      drumKit.tomTrack.style.display = "none";
+});

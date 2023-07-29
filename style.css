@@ -3,6 +3,12 @@
     padding: 0%;
     box-sizing: border-box;
 }
+html{
+    font-size: 62.5%;
+    --header1: calc(2rem + 1vw);
+    --header2: calc(1.5rem + 1vw);
+    --header3: calc(1rem + 1vw);
+}
 
 i{
     pointer-events: none;
@@ -14,7 +20,7 @@ body{
 
 h2{
     color: #fffefe;
-  font-size: 2rem;
+  font-size: var(--header1);
 }
 
 
@@ -104,9 +110,9 @@ h2{
     border: none;
     background-color: rgb(24, 149, 20);
     box-shadow: 0px 0px 40px rgb(233, 162, 162), 0px 0px 50px rgb(236, 233, 233) ;
-    padding: 0.5rem;
+    padding: 1rem;
     color: rgba(249, 249, 249, 0.987);
-    font-size: 1rem;
+      font-size: 2rem;
     cursor: pointer;
     transition: all 0.5s ease ;
 }
@@ -118,15 +124,15 @@ h2{
 }
 
 select{
-    font-size: 1rem;
+    font-size: var(--header3);
     padding: 0.5rem;
     background-color: rgb(79, 245, 234);
     border: 2px solid rgb(253, 255, 255);
-    
+    width: 25%;
 }
 
 .play-button{
-    font-size: 1.5rem;
+    font-size: var(--header2);
     padding: 0.6rem;
     border: none;
     border-radius: 3px;
@@ -146,7 +152,7 @@ select{
 }
 
 .more-audio{
-    font-size: 1rem;
+    font-size: var(--header3);
     font-weight: bold;
     padding: 0.4rem;
     border: 2px solid whitw;
@@ -182,7 +188,7 @@ box-shadow: 2px 2px 50px red, 0px 0px 80px blue, 0px 0px 40px rgb(38, 255, 0),0p
 }
 
 .tempo p {
-    font-size: 1.5rem;
+    font-size: var(--header2);
     margin: 0.5rem;
     text-align: center;
     color: #efecec;
@@ -203,3 +209,109 @@ box-shadow: 2px 2px 50px red, 0px 0px 80px blue, 0px 0px 40px rgb(38, 255, 0),0p
     }
   }
   
+
+    /* Media query  */
+    @media  screen and (width >= 1080px) and (width <= 1100) {
+    
+        .kick-track , .snare-track, .hihat-track, .tom-track{
+            width: 60%;
+        }
+
+       
+       }
+
+    @media  screen and (width <= 1260px) {
+    
+        .kick-track , .snare-track, .hihat-track, .tom-track{
+            width: 90%;
+        }
+
+
+}
+    @media  screen and (width >= 1260px) {
+    
+      .pad{
+        width: 6rem;
+        height: 6rem;
+      }
+
+
+}
+
+@media  screen and (width <= 1225px) {
+    
+    .kick-track , .snare-track, .hihat-track, .tom-track{
+        width: 100%;
+    }
+
+    .more-audio{
+        width: 15%;
+    }
+}
+
+@media  screen and (width <= 1070px) {
+    
+ h2 , .mute-button {
+        margin: 1rem;
+ } 
+
+
+}
+   
+      
+@media  screen and (width <= 1100px) {
+
+ .tempo{
+    align-self: center;
+ }
+.mute-button{
+    font-size: 1.5rem;
+}
+
+}
+@media  screen and (width <= 800px) {
+ 
+    .pad{
+        width: 4rem;
+        height: 4rem;
+    }
+
+}
+
+      
+@media  screen and (width <= 650px) {
+
+
+    .kick-track , .snare-track, .hihat-track, .tom-track{
+        flex-direction: column;
+        margin: 3rem;
+    }
+    .mute-button{
+        font-size: 1rem;
+    }
+    .tempo{
+        width: 50%;
+       }
+    .play-button{
+            border-radius: none;
+            width: 15%;
+    }
+    
+}
+@media  screen and (width <= 330px) {
+
+   .controls{
+    flex-direction: column;
+   }
+   .tempo{
+    width: 60%;
+   }
+   .pad{
+    width: 2rem;
+    height: 2rem;
+}
+.kick-track , .snare-track, .hihat-track, .tom-track{
+    width: 95%;
+}
+}
+
